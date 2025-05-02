@@ -19,6 +19,7 @@ e também permitir o disparo de e-mails em massa com base em uma planilha de con
 ## ⚙️ Como o RPA funciona atualmente
 
 ### 🔹 Opção: Envio de Versão
+![Exemplo do fluxo](readme_images/Interface_EnvioVersao.png)
 
 Permite o envio de e-mails personalizados com base em um template `.oft` (arquivo do Outlook):
 
@@ -49,6 +50,8 @@ Permite o envio de e-mails personalizados com base em um template `.oft` (arquiv
 ---
 
 ### 🔹 Opção: Envio de Solicitações
+![Exemplo do fluxo](readme_images/Interface_EnvioSolicitacoes.png)
+
 
 Permite enviar e-mails com base em um relatório de solicitações feitas por clientes.
 **Obs.:** O relatório original vem de outro sistema e contém dados sensíveis, por isso não está incluído na pasta de testes.
@@ -61,9 +64,12 @@ Permite enviar e-mails com base em um relatório de solicitações feitas por cl
 4. **Limpeza da coluna de solicitação**, removendo caracteres especiais.
 5. Quando existir a tag `<resumo>` ou `--resumo`, apenas o conteúdo dessa seção será enviado.
 
-   * Exemplo da estrutura de e-mail (em breve):
-     ![Exemplo de e-mail](images/exemplo_email.png)
-6. Se não houver resumo, o conteúdo completo da solicitação será limpo e utilizado no corpo do e-mail de forma mais amigável.
+   * Exemplo da estrutura de e-mail:
+   
+   ![Exemplo de e-mail](readme_images/corpoEmail_exemplo.png)
+
+    para tornar a mensagem mais amigavel, o programa verifica o período do dia em que o email está sendo enviado
+7. Se não houver resumo, o conteúdo completo da solicitação será limpo e utilizado no corpo do e-mail de forma mais amigável.
 
 ---
 
